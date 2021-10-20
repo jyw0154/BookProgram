@@ -4,7 +4,8 @@
 <mapper namespace="book">
 
     
-	<insert id="insert" parameterType = "hashMap" useGeneratedKeys="true"  = "true" keyProperty="book_id">
+	<insert id="insert" parameterType = "hashMap" usegeneratedKeys = "true" keyproperty="book_id">
+	
 	<![CDATA[
 		insert into book
 		(title, categor, price)
