@@ -1,8 +1,6 @@
 INDEX VERSION 1.4+D:\BookProgram\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+883272405.index
 3835702749.index
-3620232068.index
-639133563.index
-1140974468.index
 3817961187.index
 1786585773.index
-883272405.index
+3620232068.index
