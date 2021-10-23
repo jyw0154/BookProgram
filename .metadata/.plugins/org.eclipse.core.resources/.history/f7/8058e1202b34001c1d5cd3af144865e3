@@ -33,7 +33,7 @@ public class BookDao {
 	}
 	
 	// 책 목록 View 반환 
-	public java.util.List<Map<String, Object>>   selectList(Map<String, Object> map){
+	public List<Map<String, Object>> selectList(Map<String, Object> map){
 		return this.sqlSessionTemplate.selectList("book.select_list", map);
 	}
 	

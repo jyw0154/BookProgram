@@ -1,7 +1,6 @@
 INDEX VERSION 1.131+D:\BookProgram\.metadata\.plugins\org.eclipse.jdt.core
 445392632.index
 2355514278.index
-639133563.index
 4029363867.index
 1034546482.index
 2569314060.index

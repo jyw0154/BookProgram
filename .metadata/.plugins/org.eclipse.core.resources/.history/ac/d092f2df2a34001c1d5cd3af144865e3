@@ -3,7 +3,6 @@
 
 package sample.sprint.yse;
 
-import java.awt.List;
 import java.util.Map;
 
 import org.mybatis.spring.SqlSessionTemplate;
@@ -30,11 +29,6 @@ public class BookDao {
 	
 	public int delete(Map<String, Object> map) {
 		return this.sqlSessionTemplate.delete("book.delete", map);
-	}
-	
-	// 책 목록 View 반환 
-	public java.util.List<Map<String, Object>>   selectList(Map<String, Object> map){
-		return this.sqlSessionTemplate.selectList("book.select_list", map);
 	}
 	
 }
