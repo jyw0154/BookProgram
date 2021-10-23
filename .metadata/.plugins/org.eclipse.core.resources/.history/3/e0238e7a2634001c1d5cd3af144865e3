@@ -19,9 +19,4 @@ public class BookDao {
 		return this.sqlSessionTemplate.selectOne("book.select_detail", map);
 	}
 	
-	// 책 정보 업데이트 기능 추가
-	public int update(Map<String, Object> map) {
-		return this.sqlSessionTemplate.update("book.update", map);
-	}
-	
 }

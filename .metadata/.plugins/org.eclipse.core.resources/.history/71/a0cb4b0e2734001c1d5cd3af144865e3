@@ -4,7 +4,6 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -57,21 +56,6 @@ BookService bookService;
 		ModelAndView mav = new ModelAndView();
 		mav.addObject("data", detailMap);
 		mav.setViewName("/book/update");
-		return mav;
-	}
-	
-	@RequestMapping(value = "/update", method = RequestMethod.POST)
-	public ModelAndView updatePost(@RequestParam Map<String, Object> map) {
-		ModelAndView mav = new ModelAndView();
-		
-		boolean isUpdateSuccess = this.bookService.edit(map);
-		if ( isUpdateSuccess ) {
-			String bookId = map.get("bookId").toString();
-			mav.setViewName("redirect:/detail?bookId=" + bookId);
-		}else {
-			mav = this.update(map);
-		}
-		
 		return mav;
 	}
 }
