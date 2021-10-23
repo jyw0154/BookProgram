@@ -102,11 +102,6 @@ BookService bookService;
 		
 		// 데이터를 뷰에 전달할 수 있게 mav 객체에 넣는다.
 		mav.addObject("data", list);
-		
-		if ( map.containsKey("keyword")) {
-			mav.addObject("keyword", map.get("keyword"));
-		}
-		
 		mav.setViewName("/book/list");
 		return mav;
 	}
