@@ -36,7 +36,7 @@ BookService bookService;
 	}
 	
 	@RequestMapping(value = "/detail", method = RequestMethod.GET)
-	public ModelAndView detail(@RequestParam Map<String, Object> map) {
+	public ModelAndView select_detail(@RequestParam Map<String, Object> map) {
 		Map<String, Object> detailMap = this.bookService.detail(map);
 		
 		ModelAndView mav = new ModelAndView();

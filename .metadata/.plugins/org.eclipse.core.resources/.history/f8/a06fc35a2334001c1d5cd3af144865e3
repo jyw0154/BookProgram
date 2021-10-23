@@ -17,8 +17,8 @@
 	<![CDATA[
 		select title
 		     , category
-		     , price
-		     , insert_date
+		     . price
+		     . insert_date
 		  from book
 		 where book_id = #{bookId}
 	]]>
